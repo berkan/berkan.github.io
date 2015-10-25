@@ -1,15 +1,44 @@
 html {
 	letter-spacing: 0.1em;
-	font-size: 1em;
-	font-family: 'Marvel', 'Courier New', monospace;
+	font-size: 1.3em;
+	/* font-family: 'Marvel', 'Courier New', monospace; */
+	/* font-family: 'Josefin Slab', serif; */
+	/* font-family: 'open sans'; */
+	/* font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; */
+	    
+	font-family:"Triumph Tippa";
+	    
 	height: 100%;
 	overflow-y: scroll;
 }
 
 body {
-	text-align: center;
-	margin: 0px;
-	height: 100%;
-	background-color: #fdfdfd;
-	color: #333;
+    text-align: center;
+    margin: 0px;
+    height: 100%;
+    background-color: #fdfdfd;
+    color: #fff;
 }
+
+headerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #0000ff;
+}
+
