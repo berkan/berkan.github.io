@@ -1,0 +1,15 @@
+html {
+	letter-spacing: 0.1em;
+	font-size: 1em;
+	font-family: 'Marvel', 'Courier New', monospace;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	text-align: center;
+	margin: 0px;
+	height: 100%;
+	background-color: #fdfdfd;
+	color: #333;
+}
