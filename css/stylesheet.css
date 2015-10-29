@@ -1,3 +1,8 @@
+@font-face { font-family: "Josefin Slab"; font-style: normal;  font-weight: 400;  src: local("Josefin Slab"), local("JosefinSlab"), url(http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
+@font-face { font-family: "Triumph Tippa"; src: url(../fonts/triumph_tippa.ttf);}
+@font-face { font-family: "Conspiracy"; src: url(../fonts/conspiracy.ttf);}
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Mono);
+
 html {
 	letter-spacing: 0.1em;
 	font-size: 1.3em;
@@ -5,12 +10,11 @@ html {
 	/* font-family: 'Josefin Slab', serif; */
 	/* font-family: 'open sans'; */
 	/* font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; */
-	    
-	font-family:"Triumph Tippa";
-
 	/* font-family:"Conspiracy"; */
 	
-	    
+	font-family:"Triumph Tippa";
+	/* font-family: 'PT Sans'; */
+	
 	height: 100%;
 	overflow-y: scroll;
 }
@@ -44,4 +48,5 @@ a:visited {
 a:hover {
     color: #0000ff;
 }
+
 
