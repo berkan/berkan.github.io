@@ -1,0 +1,88 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:nil
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME: index.html
+#+HTML_LINK_UP: index.html
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+
+* Cantor Dust
+:PROPERTIES:
+:ID:       08e6c257-d012-42d8-b220-f9484cb1a2ab
+:END:
+
+#+ATTR_HTML: :width 640px :height 360px
+#+ATTR_HTML: :alt "Cantor Dust" :title Cantor Dust
+[[file:images/cantordust1.png][file:images/cantordust3.png]]
+#+ATTR_HTML: :width 640px :height 360px
+#+ATTR_HTML: :alt "30 Jul 2015, Goldsmiths, University of London" :title 30 Jul 2015, Goldsmiths, University of London
+#+CAPTION: Goldsmiths, University of London, 30 Jul 2015
+[[file:images/cantordust1.png][file:images/cantordust-perf.png]]
+
+
+#+BEGIN_SUMMARY
+interactive audio-visual instrument
+
+[[http://es6-features.org/#Constants][ES6 Javascript]], [[https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API][WebAudio API]], [[http://www.w3.org/TR/webmidi/][WebMIDI API]], [[https://www.google.com/chrome/browser/desktop/][Chrome]]
+#+END_SUMMARY
+
+#+BEGIN_DESCRIPTION
+#+BEGIN_QUOTE
+At rates near that of the heartbeat, we perceive repetition directly as rhythm. At the fastest rates, the repetitions blur together into the perception called “pitch.” Thus we perceive rhythmic patterns differently at different time scales. -- [[http://www.springer.com/us/book/9781846286391][Rhythm and Transforms]]
+#+END_QUOTE
+
+
+*Cantor Dust* is an instrument that generates both the timbre and the rhythm/tempo of its samples using the very same fractal process.
+
+#+ATTR_HTML: :border 0 :rules "" :frame ""
+|Fractals are created by repeating a simple process over and over in an ongoing feedback loop, and they exhibit a repeating pattern at every scale.|
+| [[file:images/ani_cantor.gif]] |
+
+When we turn the result of these iterations into a wavetable (simply and directly, without any effects), we not only find a sound rich in character but also a variety of complex, organic rhythms. And both of these audio features have exactly the same "shape", manifesting on different timescales. 
+
+#+BEGIN_CENTER
+~
+#+END_CENTER
+
+
+*Developed* as part of [[http://www.gen-av.org/gen-av-2/][Gen.AV 2 | new tools for performance with generative audiovisuals]].
+
+*Available at* [[https://github.com/AVUIs/cantor-dust][AVUIs/cantor-dust]]
+
+
+#+BEGIN_CENTER
+~
+#+END_CENTER
+
+*Reflection*
+
+
+*Background*
+- [[http://sessionville.com/articles/exploring-audio-fractals][Exploring Audio Fractals]], by Terran Olson, 2013
+- [[http://www.springer.com/us/book/9781846286391][Rhythm and Transforms]], by William Arthur Sethares, 2007
+- [[https://en.wikipedia.org/wiki/Cantor_set][Cantor set]], Wikipedia
+- [[https://en.wikipedia.org/wiki/Kronecker_product][Kronecker product]], Wikipedia
+
+#+END_DESCRIPTION
+
+
+
+
+#+BEGIN_HTML
+<!-- Google Tag Manager -->
+    <noscript><iframe src='//www.googletagmanager.com/ns.html?id=GTM-NW7VVD'
+		      height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NW7VVD');</script>
+<!-- End Google Tag Manager -->
+#+END_HTML

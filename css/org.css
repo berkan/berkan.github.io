@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Mono);
+
+code, kbd, pre, samp {
+	font-family:monospace,  serif;
+	font-size:1em;
+}
+
+html {
+	font-family:"PT Sans",  sans-serif;
+	font-size:1.1em;
+}
+
+body {
+    /* text-align: center; */
+    margin: 0px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000;
+}
+
+
+
+.headerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    /* align: left; */
+    /* font-weight: normal; */
+}
+
+.outline-text-2 {
+    /* margin-left: 200px; */
+}
+
+   
+
+/* from lpil */
+
+p {
+	/* margin-top:1.5em; */
+	/* margin-bottom:1.5em; */
+}
+
+a, p {
+	/* line-height:1.6em; */
+}
+
+a {
+	color:#008080;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#00a4a4;
+	text-decoration:underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	text-rendering:optimizeLegibility;
+}
+
+pre, code {
+	font-family:"PT Mono",  monospace;
+	font-size:.91em;
+}
+
+pre {
+	background:#f0f0f0;
+	border-radius:2px;
+	margin:.3em;
+	overflow:auto;
+	padding:.7em 1em;
+}
+
+li code, p code {
+	background:#f0f0f0;
+	padding:.1em .2em;
+}
+
+#site-header, #content {
+	/* margin-left:auto; */
+	/* margin-right:auto; */
+	/* max-width:777px; */
+	
+	margin-left:100px;
+	margin-right:100px;
+
+}
+
+/* .figure { */
+/*     /\* align:left; *\/ */
+/*     position:relative; */
+/*     float:right; */
+/*     max-height: 100px; */
+/*     max-width: 100px; */
+/* } */
+
+/* .headerimage { */
+/*     position:absolute; */
+/*     align:center; */
+/* } */
+
+
+.SUMMARY {
+    padding-top:1.7em;
+    font-style:italic;
+    color: #888888;
+}
+
+.SUMMARY p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.DESCRIPTION {
+    font-size: 14px;
+}
+
+.org-ul, .org-ol {
+    display:table;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 20px;
+    /* margin-left: 50px; */
+}
+
+.figure {    
+    float:left;
+    margin:8px 40px 20px 0px;
+    padding: 0.5em;
+}
+
+.figure p {
+    text-align: center;
+}
+
+.INSETFIGURE {
+    float:none;
+}
+
+.INSETFIGURE .figure {
+    float:none;
+}
+
+.INSETFIGURE table {
+    border: none;
+    rules: "";
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 3px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  display: table;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+span.figure-number {
+    display:none;
+}
+
+/* for the animated gif in CantorDust.org */
+.DESCRIPTION table td img {
+    margin-right: auto;
+    margin-left: auto;    
+    display: block;
+
+    margin-bottom: -3em;
+}

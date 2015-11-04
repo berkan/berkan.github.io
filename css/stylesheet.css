@@ -27,13 +27,28 @@ body {
     color: #fff;
 }
 
-headerimage {
+.headerimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
+
+
+#header {
+    margin-top: 20px;0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    
+    background-image: url(../images/soundinz-clip-embossed.png);
+    background-position: 0px 140px; /* Visible coordinates in image */
+    /* background-repeat: no-repeat; */
+    width: 683px; /* Visible height */
+    height: 140px; /* Visible width */
+}
+
 
 a:link {
     color: #000;
@@ -50,3 +65,12 @@ a:hover {
 }
 
 
+
+.ptype {
+    clear:left;
+    font-size: 0.5em;
+    font-family:monospace,  serif;
+    color: #000000;
+    margin-top: -2em;
+}
+ 

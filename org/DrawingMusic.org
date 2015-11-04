@@ -1,0 +1,128 @@
+
+* Reviews / Articles
+:PROPERTIES:
+:ID:       f9f6e698-e16a-472c-a82b-774ad37a0bb9
+:END:
+
+[[/mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf]]
+
+
+[[https://www.google.co.uk/search?safe=strict&es_sm=93&q=paper-based+music+sketching&oq=paper-based+music+sketching&gs_l=serp.3...908.1167.0.1574.2.2.0.0.0.0.307.565.2-1j1.2.0....0...1c.1.64.serp..2.0.0.YXgKzjzn-BA][paper-based music sketching - Google Search]] 
+
+[[/mnt/aux/Documents/Library/ImageSonification/Diao et all 2014 - Sketch-based Musical Composition and Performance.pdf]]
+- sketching elements [eg triangles, circles etc] are associated with instruments/sounds
+
+
+[[~/Documents/Library/ImageSonification/Healey 2007 - Sketching Musical Compositions.pdf]]
+
+
+
+
+* Examples
+:PROPERTIES:
+:ID:       f42b96b0-c2fa-4989-a4e2-0a96381f3482
+:END:
+
+- ANS
+- [[https://en.wikipedia.org/wiki/UPIC][UPIC - Wikipedia, the free encyclopedia]] / Xenakis
+
+  - [[http://highc.org/history.html][HighC - a bit of context]]
+  - Iannix
+    - [[https://vimeo.com/45161598][From UPIC to IanniX on Vimeo]]
+    - [[http://www.iannix.org/en/whatisiannix/][What is IanniX? | IanniX]]
+    - [[http://www.iannix.org/en/research/][Research | IanniX]]
+
+[[https://en.wikipedia.org/wiki/Fairlight_CMI][Fairlight CMI - Wikipedia, the free encyclopedia]]
+
+- [[http://www.uisoftware.com/MetaSynth/index.php][MetaSynth 5]]
+  MetaSynth is an award-winning electronic music and sound design studio for OS X. Its six "rooms" provide six unique environments for creating and manipulating sound. There is much more to MetaSynth than creating sound from pictures. 
+
+
+
+- [[http://anasynth.ircam.fr/home/english/software/audiosculpt][AudioSculpt | Ircam Anasynth]]
+  AudioSculpt is a software for viewing, analysis and processing of sounds. AudioSculpt offers several graphical representations of the sound signal - Waveform, spectrum and sonagram - to obtain the desired changes and help the user to select optimal control parameters. To perform the processing and analysis,
+
+
+
+
+* Notes
+:PROPERTIES:
+:ID:       bf5ec0c1-8f23-4797-b085-d1c286b2392a
+:END:
+
+sonogram: a graph representing a sound, showing the distribution of energy at different frequencies.
+
+** HighC - history
+:PROPERTIES:
+:ID:       a6cceb8d-1783-4db2-bc57-b819548ef15f
+:END:
+
+[[http://highc.org/history.html][HighC - a bit of context]]
+
+The beauty of graphical audio synthesis is that it is usable by the most novice musicians, even children, and still it provides a huge expressive space for the most creative and demanding composers
+
+the image is interpreted as a sonogram which is turned into a sampled sound by means of some kind of inverse Fourier transform. This synthesis technique provides very good means to literally chisel audio objects, add or remove effects at a very fine granularity. This technique definitely has its uses, and all those programs are great tools in the hand of capable musicians or even amateur to "create the unheard".
+
+The composition is an organic bitmap from which the acoustic phenomena emerge through a unique transformation
+
+
+** drawing electroacustic music
+:PROPERTIES:
+:ID:       1e83cd9c-a05b-4740-b9c3-2d4e8a938e5f
+:END:
+
+[[/mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf]]
+
+[Main Argument]
+
+we argue that although visual means are at the heart of the design to support music composition, these programs do not address the issues of indeterminacy and vagueness, which are integral to the way paper-based sketches are used for music composition.
+
+UPIC, Metasynth and Hyperscore attempt to address all the parameters used in a given musical genre and aim at providing a complete tool for composition. [...] we propose that an all-in-one approach based on a single representational format cannot give satisfactory results at every level.
+
+
+[Observations]
+These criticisms lead us to three observations about the design of musical applications. 
+
+1. [Vagueness; Design of a vague interface] Vagueness is integral to the ways composers get started with music composition ; this vagueness often being expressed in the form of a sketch. // Visual support for music creativity could be enhanced if initial representations could be successively re-interpreted; [...] The underspecified semantics of paper-based sketches suggests an equivalent feature in music programs ; a certain degree of ambiguity or vagueness that supports the exploration of musical structure.
+2. [Intelligent mappings; Mapping time] The intelligent mappings developed in some advanced applications constrain the results to specific contexts. Moreover, as observed in most music programs, the linear representation of time does not match the perception of musical time. // The high level constraints inherent in intelligent mappings may impose too precise a context. The mapping between graphic events and sonic events must remain a feature of music programs but the way it operates should be left to the user, in order to avoid predefined effects and support a variety of associations.
+3. Third, the role of a program in the music chain must be clearly defined (ie its role, and communication with other tools)
+
+
+[Reviews of other programs]
+
+[UPIC]
+
+Although all audible timbres could virtually be synthesized without a limit of oscillators, their drawing represents an obstacle, as complex timbres are very difficult to draw by hand.
+
+Third, the straightforward mapping between the drawings and the sonic result prevents multiple interpretations by the system and therefore constrains the drawing to the manner in which the mapping is done. These constraints, as a whole, prevent the UPIC system from being a complete composition tool. Rather, it is used as a sound design tool to create original timbres.
+
+[Metasynth] 
+
+The time is represented on the horizontal axis, while the vertical axis represent the pitch. The vertical axis is scalable, supporting the representation of linear, logarithmic or harmonic scales. But in the end, the user draws more or less a spectrogram which limits the originality of the sounds created, a disadvantage shared with the UPIC system.
+
+[AudioSculpt]
+
+is a program developed by IRCAM. Like Metasynth, it offers the manipulation of a spectrogram, but in a more straightforward way
+
+
+As a conclusion, the spectrogram representation common in the three programs reviewed does not seem to be an appropriate strategy for the support of music composition. [This representation is good for *sound design*, but *composition* requires a less constraining environment]
+
+
+[Hyperscore]
+
+*Semantic representations* for helping composition
+
+Hyperscore was designed to simplify the approach to traditional forms of composition. This program facilitates the elaboration of complex structures using a 2-step approach. The first step enables people to define motives and to associate them with given colors. The second step allows people to “paint” a score by the means of the predefined colors, presented in a way similar to a color palette (see Figure 2). The horizontal axis represents time, while the vertical axis allows to controls variations for the motive. The distinction between melodic motives and musical movements is handled in a way that reminds us of the micro / meso / macro distinction, which is an important concept to electroacoustic composition.
+In Hyperscore, the micro scale consists of the smaller elements (MIDI notes), the meso scale consists of the motivic scale and the macro scale refers to the space where the meso motives are combined and organized. The vertical axis represents
+different constraints in the meso space (the pitch of the notes) and in the macro space (complex constraints on the harmonic content). This change of representation, also a feature of Diemo Schwarz’s CataRT, facilitates the switching between semantic representations.
+
+
+[IanniX]
+Audiosculpt and IanniX are focused on specific tasks, which facilitates their integration in the composition chain. IanniX, in particular, does not produced sounds itself but is intended to communicate with other programs, and can even handle the communication with several programs concurrently (such as Max/MSP, Pure Data or Supercollider).
+
+
+
+[Granular synthesis]
+
+A first prototype of the Music Sketcher allowed to control the pitch of sound samples using the vertical values of
+a stroke. This process is rather intuitive, drawing on the tradition of score-based notation. However, the sonic result was simplistic and inaccurate, in comparison with existing audio processes dedicated to pitch shifting. In comparison, granular synthesis offers many advantages for thetesting of our system.

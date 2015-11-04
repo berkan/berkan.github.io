@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>repeaTable</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+<script type="text/javascript">
+  function Login(form) {
+  var username = form.username.value;
+  var password = form.password.value;
+  var server = form.server.value;
+  if (username && password && server) {
+  var htsite = "http://" + username + ":" + password + "@" + server;
+  window.location = htsite;
+  }
+  else {
+  }
+  }
+</script>
+</head>
+<body>
+    
+  <div id="content" style="display:block;">
+    <br>
+      Please enter your username and password
+      <br>
+      <br>
+    <form name=login>
+      <input type="hidden" name="server" value="http://agentbricoleur.org/repeaTable.html">
+	Username:
+      <input type=text name=username size=20>
+      <br><br>
+      Password:
+      <input type=password name=password size=20>
+      <input type=button value="Login" onClick="Login(this.form)" name="button">
+    </form>
+  </div>
+
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NW7VVD"
+             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW7VVD');</script>
+  <!-- End Google Tag Manager -->
+</body>
+</html>

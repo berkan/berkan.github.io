@@ -1,3 +1,101 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil toc:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:e
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+#+LINK_UP: index.html
+
 [[./images/soundinz-clip-embossed.png]]
 
-hello world
+
+
+
+* Using SASS, ES6 Javascript, and Node modules with Brunch
+:PROPERTIES:
+:ID:       ac053b3b-d8d7-489d-990a-b3e2f45e36fd
+:ATTR_HTML: :style float:left;;margin:10px 20px 20px 20px;
+:END:
+
+#+ATTR_HTML: :style float:left;;margin:10px 20px 20px 0px;
+#+ATTR_HTML: :width 600px :height 300px :style "border:2px solid black;
+#+ATTR_HTML: :alt "My fancy value for the alt attribute."
+[[./images/cantordust1.png]]
+[[http://brunch.io/][Brunch]] has recently become my favourite front end build tool, to the point where I don’t want to use Grunt or the Rails Asset Pipeline ever again. Why is this? Two reasons...
+
+*It’s fast*. Really fast. It doesn’t use any temporary intermediary files, it’s builds are incremental, and it makes clever use of caching to avoid doing work that it doesn’t have to. As a result it’s /much/ faster than Grunt and Gulp.
+
+*It’s simple*. Remember those horrible several hundred line Grunt configs manipulating a tmp/ directory? Or those Gulp configs full of pipeline logic? Well a Brunch config that does the same probably looks something like this:
+
+#+BEGIN_EXAMPLE
+exports.config = {
+  files: {
+    javascripts: { joinTo: 'main.js'  },
+    templates:   { joinTo: 'main.js'  },
+    stylesheets: { joinTo: 'main.css' },
+  },
+};
+#+END_EXAMPLE
+Yes, really.
+
+This is because it’s a specialised build tool, not a task runner like Grunt or Rake. It has one specific set of tasks, and it can use conventions to make this cleaner and easier.
+
+
+Test
+
+** subheadline
+:PROPERTIES:
+:ID:       e0cb03e9-25c6-45e4-aa2c-50f70d5f660f
+:END:
+
+
+- berkan
+- sofie
+- evren
+- nar
+- heinz
+
+
+
+
+* Tasks
+:PROPERTIES:
+:ID:       bb3d2a71-462a-4a77-ba57-e9c82d1a3122
+:END:
+
+** TODO how does this look
+:PROPERTIES:
+:ID:       ad743145-4d21-4e78-bce8-1b1708c54aec
+:END:
+
+* some table
+:PROPERTIES:
+:ID:       5ab3dd84-e7e2-4af2-b54b-afcffb5384b6
+:END:
+
+#+ATTR_HTML: :border 2 :rules all :frame border :cellpadding 10
+|-------+-----+-----+----|
+| hello | it  | is  | me |
+| who   | are | you | ?  |
+
+#+BEGIN_SRC shell
+
+brunch watch -g
+
+#+END_SRC
+
+and some sourcecode:
+
+#+BEGIN_EXAMPLE
+var i = 1;
+var j = 2;
+#+END_EXAMPLE

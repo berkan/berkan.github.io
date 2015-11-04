@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title></title>
+<!-- 2015-10-31 Sat 00:31 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#unnumbered-1">Reviews / Articles</a></li>
+<li><a href="#unnumbered-2">Examples</a></li>
+<li><a href="#unnumbered-3">Notes</a>
+<ul>
+<li><a href="#unnumbered-4">HighC - history</a></li>
+<li><a href="#unnumbered-5">drawing electroacustic music</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-unnumbered-1" class="outline-2">
+<h2 id="unnumbered-1"><a id="ID-f9f6e698-e16a-472c-a82b-774ad37a0bb9"></a>Reviews / Articles</h2>
+<div class="outline-text-2" id="text-unnumbered-1">
+<p>
+<a href="file:///mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf">file:///mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf</a>
+</p>
+
+
+<p>
+<a href="https://www.google.co.uk/search?safe=strict&amp;es_sm=93&amp;q=paper-based+music+sketching&amp;oq=paper-based+music+sketching&amp;gs_l=serp.3...908.1167.0.1574.2.2.0.0.0.0.307.565.2-1j1.2.0....0...1c.1.64.serp..2.0.0.YXgKzjzn-BA">paper-based music sketching - Google Search</a> 
+</p>
+
+<p>
+<a href="file:///mnt/aux/Documents/Library/ImageSonification/Diao et all 2014 - Sketch-based Musical Composition and Performance.pdf">file:///mnt/aux/Documents/Library/ImageSonification/Diao et all 2014 - Sketch-based Musical Composition and Performance.pdf</a>
+</p>
+<ul class="org-ul">
+<li>sketching elements [eg triangles, circles etc] are associated with instruments/sounds</li>
+</ul>
+
+
+<p>
+<a href="file:~/Documents/Library/ImageSonification/Healey 2007 - Sketching Musical Compositions.pdf">file:~/Documents/Library/ImageSonification/Healey 2007 - Sketching Musical Compositions.pdf</a>
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-unnumbered-2" class="outline-2">
+<h2 id="unnumbered-2"><a id="ID-f42b96b0-c2fa-4989-a4e2-0a96381f3482"></a>Examples</h2>
+<div class="outline-text-2" id="text-unnumbered-2">
+<ul class="org-ul">
+<li>ANS</li>
+<li><a href="https://en.wikipedia.org/wiki/UPIC">UPIC - Wikipedia, the free encyclopedia</a> / Xenakis
+
+<ul class="org-ul">
+<li><a href="http://highc.org/history.html">HighC - a bit of context</a></li>
+<li>Iannix
+<ul class="org-ul">
+<li><a href="https://vimeo.com/45161598">From UPIC to IanniX on Vimeo</a></li>
+<li><a href="http://www.iannix.org/en/whatisiannix/">What is IanniX? | IanniX</a></li>
+<li><a href="http://www.iannix.org/en/research/">Research | IanniX</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Fairlight_CMI">Fairlight CMI - Wikipedia, the free encyclopedia</a>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.uisoftware.com/MetaSynth/index.php">MetaSynth 5</a>
+  MetaSynth is an award-winning electronic music and sound design studio for OS X. Its six "rooms" provide six unique environments for creating and manipulating sound. There is much more to MetaSynth than creating sound from pictures.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li><a href="http://anasynth.ircam.fr/home/english/software/audiosculpt">AudioSculpt | Ircam Anasynth</a>
+  AudioSculpt is a software for viewing, analysis and processing of sounds. AudioSculpt offers several graphical representations of the sound signal - Waveform, spectrum and sonagram - to obtain the desired changes and help the user to select optimal control parameters. To perform the processing and analysis,</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-unnumbered-3" class="outline-2">
+<h2 id="unnumbered-3"><a id="ID-bf5ec0c1-8f23-4797-b085-d1c286b2392a"></a>Notes</h2>
+<div class="outline-text-2" id="text-unnumbered-3">
+<p>
+sonogram: a graph representing a sound, showing the distribution of energy at different frequencies.
+</p>
+</div>
+
+<div id="outline-container-unnumbered-4" class="outline-3">
+<h3 id="unnumbered-4"><a id="ID-a6cceb8d-1783-4db2-bc57-b819548ef15f"></a>HighC - history</h3>
+<div class="outline-text-3" id="text-unnumbered-4">
+<p>
+<a href="http://highc.org/history.html">HighC - a bit of context</a>
+</p>
+
+<p>
+The beauty of graphical audio synthesis is that it is usable by the most novice musicians, even children, and still it provides a huge expressive space for the most creative and demanding composers
+</p>
+
+<p>
+the image is interpreted as a sonogram which is turned into a sampled sound by means of some kind of inverse Fourier transform. This synthesis technique provides very good means to literally chisel audio objects, add or remove effects at a very fine granularity. This technique definitely has its uses, and all those programs are great tools in the hand of capable musicians or even amateur to "create the unheard".
+</p>
+
+<p>
+The composition is an organic bitmap from which the acoustic phenomena emerge through a unique transformation
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-unnumbered-5" class="outline-3">
+<h3 id="unnumbered-5"><a id="ID-1e83cd9c-a05b-4740-b9c3-2d4e8a938e5f"></a>drawing electroacustic music</h3>
+<div class="outline-text-3" id="text-unnumbered-5">
+<p>
+<a href="file:///mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf">file:///mnt/aux/Documents/Library/ImageSonification/Thiebaut et al 2008 - drawing-electroacoustic-music.pdf</a>
+</p>
+
+<p>
+[Main Argument]
+</p>
+
+<p>
+we argue that although visual means are at the heart of the design to support music composition, these programs do not address the issues of indeterminacy and vagueness, which are integral to the way paper-based sketches are used for music composition.
+</p>
+
+<p>
+UPIC, Metasynth and Hyperscore attempt to address all the parameters used in a given musical genre and aim at providing a complete tool for composition. [&#x2026;] we propose that an all-in-one approach based on a single representational format cannot give satisfactory results at every level.
+</p>
+
+
+<p>
+[Observations]
+These criticisms lead us to three observations about the design of musical applications. 
+</p>
+
+<ol class="org-ol">
+<li>[Vagueness; Design of a vague interface] Vagueness is integral to the ways composers get started with music composition ; this vagueness often being expressed in the form of a sketch. // Visual support for music creativity could be enhanced if initial representations could be successively re-interpreted; [&#x2026;] The underspecified semantics of paper-based sketches suggests an equivalent feature in music programs ; a certain degree of ambiguity or vagueness that supports the exploration of musical structure.</li>
+<li>[Intelligent mappings; Mapping time] The intelligent mappings developed in some advanced applications constrain the results to specific contexts. Moreover, as observed in most music programs, the linear representation of time does not match the perception of musical time. // The high level constraints inherent in intelligent mappings may impose too precise a context. The mapping between graphic events and sonic events must remain a feature of music programs but the way it operates should be left to the user, in order to avoid predefined effects and support a variety of associations.</li>
+<li>Third, the role of a program in the music chain must be clearly defined (ie its role, and communication with other tools)</li>
+</ol>
+
+
+<p>
+[Reviews of other programs]
+</p>
+
+<p>
+[UPIC]
+</p>
+
+<p>
+Although all audible timbres could virtually be synthesized without a limit of oscillators, their drawing represents an obstacle, as complex timbres are very difficult to draw by hand.
+</p>
+
+<p>
+Third, the straightforward mapping between the drawings and the sonic result prevents multiple interpretations by the system and therefore constrains the drawing to the manner in which the mapping is done. These constraints, as a whole, prevent the UPIC system from being a complete composition tool. Rather, it is used as a sound design tool to create original timbres.
+</p>
+
+<p>
+[Metasynth] 
+</p>
+
+<p>
+The time is represented on the horizontal axis, while the vertical axis represent the pitch. The vertical axis is scalable, supporting the representation of linear, logarithmic or harmonic scales. But in the end, the user draws more or less a spectrogram which limits the originality of the sounds created, a disadvantage shared with the UPIC system.
+</p>
+
+<p>
+[AudioSculpt]
+</p>
+
+<p>
+is a program developed by IRCAM. Like Metasynth, it offers the manipulation of a spectrogram, but in a more straightforward way
+</p>
+
+
+<p>
+As a conclusion, the spectrogram representation common in the three programs reviewed does not seem to be an appropriate strategy for the support of music composition. [This representation is good for <b>sound design</b>, but <b>composition</b> requires a less constraining environment]
+</p>
+
+
+<p>
+[Hyperscore]
+</p>
+
+<p>
+<b>Semantic representations</b> for helping composition
+</p>
+
+<p>
+Hyperscore was designed to simplify the approach to traditional forms of composition. This program facilitates the elaboration of complex structures using a 2-step approach. The first step enables people to define motives and to associate them with given colors. The second step allows people to “paint” a score by the means of the predefined colors, presented in a way similar to a color palette (see Figure 2). The horizontal axis represents time, while the vertical axis allows to controls variations for the motive. The distinction between melodic motives and musical movements is handled in a way that reminds us of the micro / meso / macro distinction, which is an important concept to electroacoustic composition.
+In Hyperscore, the micro scale consists of the smaller elements (MIDI notes), the meso scale consists of the motivic scale and the macro scale refers to the space where the meso motives are combined and organized. The vertical axis represents
+different constraints in the meso space (the pitch of the notes) and in the macro space (complex constraints on the harmonic content). This change of representation, also a feature of Diemo Schwarz’s CataRT, facilitates the switching between semantic representations.
+</p>
+
+
+<p>
+[IanniX]
+Audiosculpt and IanniX are focused on specific tasks, which facilitates their integration in the composition chain. IanniX, in particular, does not produced sounds itself but is intended to communicate with other programs, and can even handle the communication with several programs concurrently (such as Max/MSP, Pure Data or Supercollider).
+</p>
+
+
+
+<p>
+[Granular synthesis]
+</p>
+
+<p>
+A first prototype of the Music Sketcher allowed to control the pitch of sound samples using the vertical values of
+a stroke. This process is rather intuitive, drawing on the tradition of score-based notation. However, the sonic result was simplistic and inaccurate, in comparison with existing audio processes dedicated to pitch shifting. In comparison, granular synthesis offers many advantages for thetesting of our system.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2015-10-31 Sat 00:31</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

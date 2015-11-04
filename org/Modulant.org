@@ -1,0 +1,110 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil 
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:nil
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME: index.html
+#+HTML_LINK_UP: index.html
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+
+
+* Modulant
+:PROPERTIES:
+:ID:       08e6c257-d012-42d8-b220-f9484cb1a2ab
+:END:
+
+#+ATTR_HTML: :width 640px :height 360px
+#+ATTR_HTML: :alt "Modulant" :title Modulant playing a Klee drawing
+[[file:images/modulant-klee-c.png][file:images/modulant-klee-c.png]]
+#+ATTR_HTML: :width 640px :height 360px
+#+ATTR_HTML: :alt "6 Feb 2015, Goldsmiths, University of London" :title 6 Feb 2015, Goldsmiths, University of London
+#+CAPTION: Goldsmiths, University of London, 6 Feb 2015
+[[file:images/modulant-perf.png]]
+#+ATTR_HTML: :width 640px :height 360px
+#+ATTR_HTML: :alt "Xenakis showing UPIC to children" :title Xenakis showing UPIC to children
+#+CAPTION: Xenakis showing UPIC to children 
+[[file:images/xenakis-upic-children.gif][file:images/xenakis-upic-children.gif]]
+
+
+#+BEGIN_SUMMARY
+interactive audio-visual instrument
+
+[[https://processing.org][Processing]], [[http://libpd.cc/][libpd]]
+#+END_SUMMARY
+
+#+BEGIN_DESCRIPTION
+If you are not a musician, making music with an instrument you've just picked up isn't going to be easy.
+
+*Modulant* is an experiment to recreate possibly the simplest and most intuitive interface for visual composition of sounds & music.
+
+#+ATTR_HTML: :border 0 :rules "" :frame "" :style margin-bottom:-1em
+| The horizontal axis of the painter's canvas is mapped onto time; the vertical axis is mapped onto a pitch spectrum spanning 10 octaves. The canvas is scanned from left to right, and at each | [[file:images/time-pitch-sm.png]] |
+timestep the pixels on the current vertical line is sonified. 
+
+
+*Inspired by* Evgeny Murzin's [[https://en.wikipedia.org/wiki/ANS_synthesizer][ANS synthesizer]] (1958) which came out of his search for a "Universal Synthesizer"; and by Iannis Xenakis' [[https://en.wikipedia.org/wiki/UPIC][UPIC]] (1977), "a unique music-composing and educational tool for non-musicians, artists, programmers and children".
+
+*Follows* a long history of [[http://www.flong.com/texts/publications/thesis/][Painterly Interfaces for Audiovisual Performance]].
+
+
+*Developed* as part of [[http://www.gen-av.org/gen-av-1/][Gen.AV 1 | new tools for performance with generative audiovisuals]].
+
+
+*Audience feedback* from the evaluation survey (47 participants):
+|--------------------------------------------+---+------|
+|                                            |   |  avg |
+|--------------------------------------------+---+------|
+| Audio-Visual Relation (1=worst to 5=best)  |   | 4.12 |
+| Audience Understanding (1=worst to 5=best) |   | 4.63 |
+| Enjoyed more (1=audio to 5=visuals)        |   | 3.18 |
+|--------------------------------------------+---+------|
+
+#+BEGIN_CENTER
+~
+#+END_CENTER
+
+
+*Featured at* [[https://nime2015.lsu.edu/proceedings/230/index.html][NIME 2015: Prototyping Audiovisual Performance Tools: A Hackathon Approach]]
+
+*Available at* [[https://github.com/AVUIs/Modulant][AVUIs/Modulant]]
+
+
+#+BEGIN_CENTER
+~
+#+END_CENTER
+
+*Reflection*
+The strength of drawing-based musical instruments is also their weakness: they are very intuitive because the audio-visual mapping is direct, precise, and free from additional semantics -- but the very same directness and lack of semantics make building up to a composition difficult.
+
+The same is true for Modulant. As a tool for sound design and exploration, it offers infinite possibilities; however, its visual language and painterly interface are both too precise and not rich enough at the same time for comfortably devising musical compositions.
+
+
+*Background*
+- [[http://www.umatic.nl/tonewheels_historical.html][A Brief History of Optical Synthesis]], by Derek Holzer
+- [[http://asmir.info/book_soundinz.htm][Sound in Z -- Experiments in Sound and Electronic Music]], by Andrey Smirnov
+- [[https://en.wikipedia.org/wiki/ANS_synthesizer][ANS synthesizer]], Wikipedia
+- [[https://en.wikipedia.org/wiki/UPIC][UPIC]], Wikipedia
+- [[http://quod.lib.umich.edu/cgi/p/pod/dod-idx/drawing-electroacoustic-music.pdf?c=icmc;idno=bbp2372.2008.113][Thiebaut, Jean-Baptiste, et al. "Drawing electroacoustic music." Proc. ICMC. Vol. 8. 2008.]]
+- [[http://www.flong.com/texts/publications/thesis/][Painterly Interfaces for Audiovisual Performance - Golan Levin and Collaborators]]
+
+#+END_DESCRIPTION
+
+
+
+#+BEGIN_HTML
+<!-- Google Tag Manager -->
+    <noscript><iframe src='//www.googletagmanager.com/ns.html?id=GTM-NW7VVD'
+		      height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NW7VVD');</script>
+<!-- End Google Tag Manager -->
+#+END_HTML
