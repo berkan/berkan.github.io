@@ -6,8 +6,8 @@ code, kbd, pre, samp {
 }
 
 html {
-	font-family:"PT Sans",  sans-serif;
-	font-size:1.1em;
+    font-family:"PT Sans",  sans-serif;
+    font-size:1.1em;
 }
 
 body {
@@ -122,6 +122,7 @@ li code, p code {
 
 .DESCRIPTION {
     font-size: 14px;
+    width: 1065px;
 }
 
 .org-ul, .org-ol {
@@ -140,19 +141,6 @@ li code, p code {
 
 .figure p {
     text-align: center;
-}
-
-.INSETFIGURE {
-    float:none;
-}
-
-.INSETFIGURE .figure {
-    float:none;
-}
-
-.INSETFIGURE table {
-    border: none;
-    rules: "";
 }
 
 blockquote {
@@ -186,4 +174,9 @@ span.figure-number {
     display: block;
 
     margin-bottom: -3em;
+}
+
+.REPEATABLE_INLET {
+    float:right;
+    margin-top: -40px;
 }

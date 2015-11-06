@@ -95,9 +95,9 @@ The same is true for Modulant. As a tool for sound design and exploration, it of
 
 
 
-#+BEGIN_HTML
+#+BEGIN_HTML 
 </p></p></p></p>
-<p style="font-size:0.2em; float:right;">
+<p style="font-size:0.65em; float:right;">
 © 2015 Berkan Eskikaya, Louis Pilfold
 </p>
 #+END_HTML

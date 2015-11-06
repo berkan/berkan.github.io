@@ -74,7 +74,7 @@ When we turn the result of these iterations into a wavetable (simply and directl
 
 #+BEGIN_HTML 
 </p></p></p></p>
-<p style="font-size:0.2em; float:right;">
+<p style="font-size:0.65em; float:right;">
 © 2015 Berkan Eskikaya, Louis Pilfold
 </p>
 #+END_HTML
