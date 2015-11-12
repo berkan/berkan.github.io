@@ -46,3 +46,8 @@ This is an exploration of possible design solutions for a *low-cost* and *portab
 #+END_HTML
 
 #+END_HEADER
+
+#+BEGIN_HTML
+<br/>
+<br/>
+#+END_HTML
