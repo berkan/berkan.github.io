@@ -27,6 +27,20 @@ One such instance is the *Tabletop tangible interface*, or Interactive surface, 
 
 This is an exploration of possible design solutions for a *low-cost* and *portable* Tabletop tangible interface.
 
+
+| *Constraint* |   | *Strategy 1*                                                      |   | *Strategy 2*                                                                            |
+|            |   |                                                                 |   |                                                                                       |
+|------------+---+-----------------------------------------------------------------+---+---------------------------------------------------------------------------------------|
+| *low-cost*   |   | *already-owned* / assumed ownership: smartphone, tablet computer  |   | *affordable to own*: e.g. rasperry pi                                                   |
+| *portable*   |   | *already-carried* / assumed on person: smartphone                 |   | *easy to carry*: tablet computer, rasperry pi                                           |
+| *tangible*   |   | *ordinary objects*, or possibly some limited set: unmarked tokens |   | *"smart" objects*: fiducial markers for CV; tokens for capacitive screens; sensor pucks |
+
+#+BEGIN_HTML
+<br/>
+<br/>
+#+END_HTML
+
+
 #+BEGIN_HTML
 <iframe src="https://docs.google.com/spreadsheets/d/1NV_0nuIxJrEy3drU28ixFjvSHb5lAmYdi71dPFxUQis/pubhtml?widget=true&amp;headers=false"></iframe>
 #+END_HTML
