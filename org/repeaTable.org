@@ -1,0 +1,34 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil toc:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/projects.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:e
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+#+LINK_UP: index.html
+
+* Designs for a Low-cost, Portable Tangible Tabletop Interface
+:PROPERTIES:
+:ID:       201b38ce-1fec-4a8a-b614-4ec8e4669b14
+:END:
+
+#+BEGIN_HEADER
+*Tangible User Interfaces* (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+
+One such instance is the *Tabletop tangible interface*, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. 
+
+This is an exploration of possible design solutions for a *low-cost* and *portable* Tabletop tangible interface.
+
+#+BEGIN_HTML
+<iframe src="https://docs.google.com/spreadsheets/d/1NV_0nuIxJrEy3drU28ixFjvSHb5lAmYdi71dPFxUQis/pubhtml?widget=true&amp;headers=false"></iframe>
+#+END_HTML
+
+#+END_HEADER

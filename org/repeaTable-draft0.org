@@ -1,0 +1,63 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:nil
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME: index.html
+#+HTML_LINK_UP: index.html
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+
+
+* Designs for a Low-cost, Portable Tangible Tabletop Interface
+:PROPERTIES:
+:ID:       1f68bf95-9555-43b4-ab1e-54c4aa0ba021
+:END:
+
+#+BEGIN_SUMMARY
+research
+#+END_SUMMARY
+
+#+BEGIN_DESCRIPTION
+
+
+*Tangible User Interfaces* (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+
+One such instance is the *Tabletop tangible interface*, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. 
+
+This is a systematic exploration of possible designs for a *low-cost* and *portable* Tabletop tangible interface.
+
+#+BEGIN_CENTER
+~
+#+END_CENTER
+
+
+| Goal | 
+
+
+The design of any tangible user interface needs to address how exactly and by which means to create the connections between the digital and physical worlds -- that is:
+#+BEGIN_REPEATABLE_INLET
+[[file:images/Ishii2008-The-tangible-user-interface-and-its-evolution.jpg][file:images/Ishii2008-The-tangible-user-interface-and-its-evolution-sm.png]]
+#+END_REPEATABLE_INLET
+- *Physical -> Digital* : How to sense and transfer the state of the physical world and the actions of the users into the digital model 
+- *Digital -> Physical* : How to convey the state of the digital world to the user(s) in the physical world 
+
+
+
+
+Tangible User Interfaces (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+
+One such instance is the Tabletop tangible interface, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. A popular example is the "reacTable Modular Synthesizer" which allows the creation of electronic music through tangible tokens that are visually connected to each other by the underlying display.
+
+
+The design of any tangible user interface needs to address how exactly and by which means to create the connections between the digital and physical worlds -- that is:
+- Physical -> Digital : How to sense and transfer the state of the physical world and the actions of the users into the digital model
+- Digital -> Physical : How to convey the state of the digital world to the user(s) in the physical world
+
+
+#+END_DESCRIPTION

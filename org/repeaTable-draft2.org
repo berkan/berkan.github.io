@@ -1,0 +1,129 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil toc:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/projects.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:e
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+#+LINK_UP: index.html
+
+* Designs for a Low-cost, Portable Tangible Tabletop Interface
+:PROPERTIES:
+:ID:       201b38ce-1fec-4a8a-b614-4ec8e4669b14
+:END:
+
+#+BEGIN_HEADER
+*Tangible User Interfaces* (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+
+One such instance is the *Tabletop tangible interface*, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. 
+
+This is an exploration of possible design solutions for a *low-cost* and *portable* Tabletop tangible interface.
+
+#+BEGIN_HTML
+<iframe src="https://docs.google.com/spreadsheets/d/1NV_0nuIxJrEy3drU28ixFjvSHb5lAmYdi71dPFxUQis/pubhtml?widget=true&amp;headers=false"></iframe>
+#+END_HTML
+
+
+
+
+# - *Audio/Visual Processor*: Smart phone / Tablet computer; *Digital2Physical*: Pico Projector; *Physical2Digital*: Computer vision
+#   - Smartphone + tablet with with integrated laser projector 
+#     - [[http://www.engadget.com/2015/05/28/lenovo-smart-cast-laser-projector-smartphone/][Lenovo Smartcast projector phone beams a touchscreen onto any surface]], [concept phone, price unknown]
+
+#   - Any smartphone / tablet, with a separate pico laser projector
+#     - [[http://giznoise.com/2015/07/26/sony-mpcl1-hd-mobile-laser-pico-projector/][Sony MPCL1 HD Mobile Laser Pico Projector - GizNoise]], [[http://www.wired.com/2015/07/stuff-big-screen-pocket-tiny-projector/][Stuff a Big Screen in Your Pocket With This Tiny Projector | WIRED]], [US$350]
+#     - [[http://www.celluon.com/products_picopro_overview.php][Celluon PicoPro Pico Projector | A Mobile Laser HD Projector]], [[http://www.engadget.com/2015/01/29/picopro-a-laser-projector-about-the-size-of-an-iphone-6-plus/][PicoPro: A laser projector about the size of an iPhone 6 Plus]], [US$350]
+#     - [[http://www.pushsquare.com/forums/ps4/mpcl1_vs_other_mini_projectors][MPCL1 vs. Other Mini Projectors - PlayStation 4 (PS4) Forum - Page 1]]
+
+# - *Audio/Visual Processor*: Smart phone / Tablet computer; *Digital2Physical*: Screen; *Physical2Digital*: Computer vision
+#   - [[https://www.playosmo.com/en-gb/][Osmo from Tangible Play]]
+
+# - *Audio/Visual Processor*: Smart phone / Tablet computer;  *Digital2Physical*: LED lights; *Physical2Digital*: button interface, rotary interface, proximity sensors
+#   - "Smart" pucks with on board processor, Bluetooth LE, led ring, button and rotary, ir-based proximity sensort
+#   - Inspirations:
+#     - [[http://smashtoast.com/puck/][PUCK | SmashToast, Inc.]]
+#     - [[http://www.vsnmobil.com/collections/v-bttn/products/v-bttn-wearable-bluetooth-le-4-0-device][V.BTTN - Wearable Bluetooth LE 4.0 Device - VSN Mobil]]
+#     - [[http://www.gizmag.com/flic-button/34904/][Flic lets you create a button for anything]]
+#     - [[http://www.digchip.com/datasheets/8776601-sensor-puck-multiple-function.html][SENSOR-PUCK datasheet - <p>Silicon Labs SENSOR-PUCK Development Tool provides]]
+#     - [[http://www.slashgear.com/griffin-powermate-bluetooth-revamps-iconic-dial-as-mac-controller-05311146/][Griffin PowerMate Bluetooth revamps iconic dial as Mac controller - SlashGear]]
+#     - [[http://hackaday.com/2015/01/17/dial-is-a-simple-and-effective-wireless-media-controller/][Dial is a Simple and Effective Wireless Media Controller | Hackaday]]
+
+
+
+
+#+END_HEADER
+
+# Smart phone / Tablet computer + Pico Projector
+
+** Lenovo Smartcast
+:PROPERTIES:
+:ID:       227f32ea-8248-4729-a77e-6ac9a6be7d96
+:END:
+
+#+BEGIN_IMAGES
+#+ATTR_HTML: :style width:260px;height:180px;float:left;
+#+ATTR_HTML: :class IMAGE :alt "Lenovo Smartcast" :title Lenovo Smartcast
+[[file:images/lenovo-smartcast-1.jpg][file:images/lenovo-smartcast-1.jpg]]
+#+ATTR_HTML: :style width:260px;height:180px;float:left;
+#+ATTR_HTML: :class IMAGE :alt "Lenovo Smartcast" :title Lenovo Smartcast
+[[file:images/lenovo-smartcast-2.jpg][file:images/lenovo-smartcast-2.jpg]]
+#+END_IMAGES
+
+#+BEGIN_TEXT
+#+BEGIN_SUMMARY
+smartphone, integrated laser projector
+#+END_SUMMARY
+
+[[http://www.engadget.com/2015/05/28/lenovo-smart-cast-laser-projector-smartphone/][Lenovos projector phone beams a touchscreen onto any surface]]
+[[http://www.pocket-lint.com/news/134042-lenovo-smart-cast-projector-phone-fun-and-gimmicks][Lenovo Smart Cast: Projector phone fun and gimmicks - Pocket-lint]]
+[[https://www.youtube.com/results?search_query=lenovo+smart+cast][lenovo smart cast - YouTube]]
+
+#+END_TEXT
+
+
+
+** Project2
+:PROPERTIES:
+:ID:       893d9a2b-cb0f-47b7-ae69-75192baaf363
+:END:
+
+
+
+#+BEGIN_HEADER
+boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom
+#+END_HEADER
+
+#+BEGIN_IMAGES 
+
+#+ATTR_HTML: :class IMAGE :alt "30 Jul 2015, Goldsmiths, University of London" :title 30 Jul 2015, Goldsmiths, University of London
+#+CAPTION: Goldsmiths, University of London, 30 Jul 2015
+[[file:images/cantordust-perf.png][file:images/cantordust-perf.png]]
+
+#+END_IMAGES
+
+#+BEGIN_TEXT
+*Reflection*
+The strength of drawing-based musical instruments is also their weakness: they are very intuitive because the audio-visual mapping is direct, precise, and free from additional semantics -- but the very same directness and lack of semantics make building up to a composition difficult.
+
+The same is true for Modulant. As a tool for sound design and exploration, it offers infinite possibilities; however, its visual language and painterly interface are both too precise and not rich enough at the same time for comfortably devising musical compositions.
+
+
+*Background & Resources*
+- [[http://www.umatic.nl/tonewheels_historical.html][A Brief History of Optical Synthesis]], by Derek Holzer
+- [[http://asmir.info/book_soundinz.htm][Sound in Z -- Experiments in Sound and Electronic Music]], by Andrey Smirnov
+- [[https://en.wikipedia.org/wiki/ANS_synthesizer][ANS synthesizer]], Wikipedia
+- [[https://en.wikipedia.org/wiki/UPIC][UPIC]], Wikipedia
+- [[http://quod.lib.umich.edu/cgi/p/pod/dod-idx/drawing-electroacoustic-music.pdf?c=icmc;idno=bbp2372.2008.113][Thiebaut, Jean-Baptiste, et al. "Drawing electroacoustic music." Proc. ICMC. Vol. 8. 2008.]]
+- [[http://www.flong.com/texts/publications/thesis/][Painterly Interfaces for Audiovisual Performance - Golan Levin and Collaborators]]
+
+#+END_TEXT
+
+

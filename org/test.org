@@ -8,94 +8,116 @@
 #+HTML_LINK_HOME:
 #+HTML_LINK_UP:
 #+HTML_MATHJAX:
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/projects.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
 #+HTML_HEAD_EXTRA:
 #+SUBTITLE:e
 #+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
 #+LATEX_HEADER:
 #+LINK_UP: index.html
 
-[[./images/soundinz-clip-embossed.png]]
-
-
-
-
-* Using SASS, ES6 Javascript, and Node modules with Brunch
+* Designs for a Low-cost, Portable Tangible Tabletop Interface
 :PROPERTIES:
-:ID:       ac053b3b-d8d7-489d-990a-b3e2f45e36fd
-:ATTR_HTML: :style float:left;;margin:10px 20px 20px 20px;
+:ID:       201b38ce-1fec-4a8a-b614-4ec8e4669b14
 :END:
 
-#+ATTR_HTML: :style float:left;;margin:10px 20px 20px 0px;
-#+ATTR_HTML: :width 600px :height 300px :style "border:2px solid black;
-#+ATTR_HTML: :alt "My fancy value for the alt attribute."
-[[./images/cantordust1.png]]
-[[http://brunch.io/][Brunch]] has recently become my favourite front end build tool, to the point where I don’t want to use Grunt or the Rails Asset Pipeline ever again. Why is this? Two reasons...
-
-*It’s fast*. Really fast. It doesn’t use any temporary intermediary files, it’s builds are incremental, and it makes clever use of caching to avoid doing work that it doesn’t have to. As a result it’s /much/ faster than Grunt and Gulp.
-
-*It’s simple*. Remember those horrible several hundred line Grunt configs manipulating a tmp/ directory? Or those Gulp configs full of pipeline logic? Well a Brunch config that does the same probably looks something like this:
-
-#+BEGIN_EXAMPLE
-exports.config = {
-  files: {
-    javascripts: { joinTo: 'main.js'  },
-    templates:   { joinTo: 'main.js'  },
-    stylesheets: { joinTo: 'main.css' },
-  },
-};
-#+END_EXAMPLE
-Yes, really.
-
-This is because it’s a specialised build tool, not a task runner like Grunt or Rake. It has one specific set of tasks, and it can use conventions to make this cleaner and easier.
+#+BEGIN_HEADER
+boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom
+#+END_HEADER
 
 
-Test
 
-** subheadline
+** Project1
 :PROPERTIES:
-:ID:       e0cb03e9-25c6-45e4-aa2c-50f70d5f660f
+:ID:       227f32ea-8248-4729-a77e-6ac9a6be7d96
+:END:
+
+#+BEGIN_HEADER
+boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom
+#+END_HEADER
+
+
+#  #+BEGIN_PROJECT
+
+#+BEGIN_IMAGES
+
+#+ATTR_HTML: :class IMAGE :alt "Cantor Dust" :title Cantor Dust 
+#+CAPTION: Cantor Dust | 8 fractal synthesizers
+[[file:images/cantordust3.png][file:images/cantordust3.png]]
+
+#+ATTR_HTML: :class IMAGE :alt "Cantor Dust" :title Cantor Dust 
+#+CAPTION: Cantor Dust | 8 fractal synthesizers
+[[file:images/cantordust3.png][file:images/cantordust3.png]]
+
+#+END_IMAGES
+
+#+BEGIN_TEXT
+#+BEGIN_QUOTE
+At rates near that of the heartbeat, we perceive repetition directly as rhythm. At the fastest rates, the repetitions blur together into the perception called “pitch.” Thus we perceive rhythmic patterns differently at different time scales. -- [[http://www.springer.com/us/book/9781846286391][Rhythm and Transforms]]
+#+END_QUOTE
+
+*Cantor Dust* is an instrument that generates both the timbre and the rhythm/tempo of its samples using the very same fractal process.
+
+#+ATTR_HTML: :border 0 :rules "" :frame ""
+|Fractals are created by repeating a simple process over and over in an ongoing feedback loop. The resulting structure exhibits a repeating pattern at every scale.         |
+|[[file:images/ani_cantor.gif]] |
+
+A traditional [[https://en.wikipedia.org/wiki/Cantor_set][Cantor set]] system, for instance, divides a line repeatedly by taking out the middle-third of its segments. The result --what is left from the line-- is an infinite set of points (which is where the name Cantor Dust comes from).
+
+#+BEGIN_QUOTE
+At rates near that of the heartbeat, we perceive repetition directly as rhythm. At the fastest rates, the repetitions blur together into the perception called “pitch.” Thus we perceive rhythmic patterns differently at different time scales. -- [[http://www.springer.com/us/book/9781846286391][Rhythm and Transforms]]
+#+END_QUOTE
+
+*Cantor Dust* is an instrument that generates both the timbre and the rhythm/tempo of its samples using the very same fractal process.
+
+#+ATTR_HTML: :border 0 :rules "" :frame ""
+|Fractals are created by repeating a simple process over and over in an ongoing feedback loop. The resulting structure exhibits a repeating pattern at every scale.         |
+|[[file:images/ani_cantor.gif]] |
+
+A traditional [[https://en.wikipedia.org/wiki/Cantor_set][Cantor set]] system, for instance, divides a line repeatedly by taking out the middle-third of its segments. The result --what is left from the line-- is an infinite set of points (which is where the name Cantor Dust comes from).
+
+#+END_TEXT
+
+
+# #+ATTR_HTML: :class IMAGE :alt "Cantor Dust" :title Cantor Dust 
+# #+CAPTION: Cantor Dust | 8 fractal synthesizers
+# [[file:images/cantordust3.png][file:images/cantordust3.png]]
+
+
+
+** Project2
+:PROPERTIES:
+:ID:       893d9a2b-cb0f-47b7-ae69-75192baaf363
 :END:
 
 
-- berkan
-- sofie
-- evren
-- nar
-- heinz
+
+#+BEGIN_HEADER
+boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom boom
+#+END_HEADER
+
+#+BEGIN_IMAGES 
+
+#+ATTR_HTML: :class IMAGE :alt "30 Jul 2015, Goldsmiths, University of London" :title 30 Jul 2015, Goldsmiths, University of London
+#+CAPTION: Goldsmiths, University of London, 30 Jul 2015
+[[file:images/cantordust-perf.png][file:images/cantordust-perf.png]]
+
+#+END_IMAGES
+
+#+BEGIN_TEXT
+*Reflection*
+The strength of drawing-based musical instruments is also their weakness: they are very intuitive because the audio-visual mapping is direct, precise, and free from additional semantics -- but the very same directness and lack of semantics make building up to a composition difficult.
+
+The same is true for Modulant. As a tool for sound design and exploration, it offers infinite possibilities; however, its visual language and painterly interface are both too precise and not rich enough at the same time for comfortably devising musical compositions.
 
 
+*Background & Resources*
+- [[http://www.umatic.nl/tonewheels_historical.html][A Brief History of Optical Synthesis]], by Derek Holzer
+- [[http://asmir.info/book_soundinz.htm][Sound in Z -- Experiments in Sound and Electronic Music]], by Andrey Smirnov
+- [[https://en.wikipedia.org/wiki/ANS_synthesizer][ANS synthesizer]], Wikipedia
+- [[https://en.wikipedia.org/wiki/UPIC][UPIC]], Wikipedia
+- [[http://quod.lib.umich.edu/cgi/p/pod/dod-idx/drawing-electroacoustic-music.pdf?c=icmc;idno=bbp2372.2008.113][Thiebaut, Jean-Baptiste, et al. "Drawing electroacoustic music." Proc. ICMC. Vol. 8. 2008.]]
+- [[http://www.flong.com/texts/publications/thesis/][Painterly Interfaces for Audiovisual Performance - Golan Levin and Collaborators]]
+
+#+END_TEXT
 
 
-* Tasks
-:PROPERTIES:
-:ID:       bb3d2a71-462a-4a77-ba57-e9c82d1a3122
-:END:
-
-** TODO how does this look
-:PROPERTIES:
-:ID:       ad743145-4d21-4e78-bce8-1b1708c54aec
-:END:
-
-* some table
-:PROPERTIES:
-:ID:       5ab3dd84-e7e2-4af2-b54b-afcffb5384b6
-:END:
-
-#+ATTR_HTML: :border 2 :rules all :frame border :cellpadding 10
-|-------+-----+-----+----|
-| hello | it  | is  | me |
-| who   | are | you | ?  |
-
-#+BEGIN_SRC shell
-
-brunch watch -g
-
-#+END_SRC
-
-and some sourcecode:
-
-#+BEGIN_EXAMPLE
-var i = 1;
-var j = 2;
-#+END_EXAMPLE

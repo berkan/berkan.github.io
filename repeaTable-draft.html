@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2015-11-12 Thu 19:03 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="index.html"> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content">
+
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><a id="ID-1f68bf95-9555-43b4-ab1e-54c4aa0ba021"></a>Designs for a Low-cost, Portable Tangible Tabletop Interface</h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<div class="SUMMARY">
+<p>
+research
+</p>
+
+</div>
+
+<div class="DESCRIPTION">
+<p>
+
+</p>
+
+
+<p>
+<b>Tangible User Interfaces</b> (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+</p>
+
+<p>
+One such instance is the <b>Tabletop tangible interface</b>, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. 
+</p>
+
+<p>
+This is a systematic exploration of possible designs for a <b>low-cost</b> and <b>portable</b> Tabletop tangible interface.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><a id="ID-49ddc333-dfad-487c-bd3b-dac7e41a05c6"></a>Resources</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<ul class="org-ul">
+<li><a href="http://mkonrad.net/projects/ipad2tui.html">mkonrad.net: ~/ipad2tui - Building a Portable Low Cost Tangible User Interface Based on a Tablet Computer</a></li>
+
+<li><a href="http://spyractable.blogspot.gr/">Spyractable: A "reactable-like" project for DIY tangible interface synthesizer</a>
+<ul class="org-ul">
+<li><a href="http://link.springer.com/chapter/10.1007/978-3-319-07230-2_57">Spyractable: A Tangible User Interface Modular Synthesizer - Springer</a></li>
+<li><a href="https://books.google.co.uk/books?id=3EG5BQAAQBAJ&amp;pg=PA600&amp;lpg=PA600&amp;dq=Spyractable&amp;source=bl&amp;ots=K15YWUGKg5&amp;sig=SoMyDJJa-HbRV9e5OtV0sP749dc&amp;hl=en&amp;sa=X&amp;ved=0CC0Q6AEwAmoVChMIu_C1gpT8yAIVi3IUCh2qmAw2#v=onepage&amp;q=Spyractable&amp;f=false">Human-Computer Interaction Advanced Interaction, Modalities, and Techniques &#x2026; - Google Books</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><a id="ID-9a412929-2938-4f16-8232-a847bb92b4a7"></a>Tasks</h2>
+<div class="outline-text-2" id="text-orgheadline3">
+<ul class="org-ul">
+<li>Read about Modular Synthesizers and their modules and techniques
+<ul class="org-ul">
+<li><p>
+Spyractable has a good list of modules
+<a href="http://spyractable.blogspot.co.uk/2013/04/what-there-is-so-far.html">Spyractable: A "reactable-like" project for DIY tangible interface synthesizer: What there is so far&#x2026;</a>
+</p>
+<blockquote>
+<p>
+
+</p>
+
+<p>
+Right now there have been created 12 patches (tangible objects) that implement these modular synthesizer modules:
+</p>
+<ul class="org-ul">
+<li>Amplifier with lfo input</li>
+<li>A multi-effect with chorus, phaser and mixed   function.</li>
+<li>A multi-filter with low-pass, high-pass and band-pass function, plus a cut-off frequency generated envelope (GE) with lfo input and a "midi keyboard plug-in that sets the cut-off frequency equal the midi-pitch and a volume GE. This way it could function like a silly Subtractive-synthesizer if you connect it with noisy input..</li>
+<li>Delay effect</li>
+<li>Sample player with 8 samples</li>
+<li>A sine-wave oscillator that also functions as carrier by connection to it a frequency modulator, and also volume sliders for the sine harmonics of the frequency and a GE working when midi keyboard is on.</li>
+<li>Noise oscillator</li>
+<li>Microphone input with a midi-keyboard vocoder plug in (fixed chords).</li>
+<li>A multi-oscillator with sine, saw, square and triangle oscillators, plus midi-keyboard in.</li>
+<li>lfo (sine, saw, square and triangle oscillators).</li>
+<li>modulator that takes sine-oscillator patch's frequency and user sets the modulation index and the frequency ratio.</li>
+<li>Master volume controller.</li>
+</ul>
+</blockquote></li>
+<li>reacTable mentions that they have abstractions (instruments) built on the simpler puredata objects</li>
+<li><p>
+<a href="http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/">Pure Data - Building a Simple Synthesizer</a>
+</p>
+<blockquote>
+<p>
+"In analog electronic music, a synthesizer is built from several modules, or parts:
+</p>
+
+<ul class="org-ul">
+<li>The Oscillators, which generate the tones.</li>
+<li>The LFO (Low Frequency Oscillator), which usually modulates either the frequency or gain of the Oscillator(s), or the frequency of the Filter.</li>
+<li>The Filter, which emphasizes and/or removes certain frequencies.</li>
+<li>The Envelope Generator, which controls changes in frequency or gain over the duration of the note.</li>
+<li>The Amplifier, which controls the gain of the synthesizer.</li>
+</ul>
+</blockquote></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><a id="ID-6b72c6fa-f953-4408-9812-539dbe78afb3"></a>Research / Questions</h2>
+<div class="outline-text-2" id="text-orgheadline4">
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><a id="ID-de6f0f41-cb29-4d5c-92ad-ede7ed78cdb3"></a>puredata &amp; dynamic patching / libpd vs dynamic patching</h3>
+<div class="outline-text-3" id="text-orgheadline5">
+<p>
+[The trouble is, Pure Data community is using "Dynamic Patching" to mean dynamically creating new objects; whereas I mean it in the reacTable sense &#x2013; dynamically connecting objects based on their proximity]
+</p>
+
+
+<p>
+<a href="https://twitter.com/jonbro/status/325900235459141633">Jonathan Brodsky on Twitter: "@paniq we use libpd, not zengarden&#x2026;"</a> "A .pd file is a list of internal Pd messages. You can send the same messages with libpd, so dynamic patching is possible."
+</p>
+
+<p>
+<a href="https://github.com/mhroth/ZenGarden">mhroth/ZenGarden</a> - ZenGarden (ZG) is a runtime for the Pure Data (Pd) audio programming language. It is implemented as an extensible audio library allowing full control over signal processing, message passing, and graph manipulation. 
+</p>
+
+<p>
+<a href="https://www.mail-archive.com/pd-list@iem.at/msg43036.html">{PD} Dynamic patching with audio - review</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6"><a id="ID-0843c65a-eda2-4304-abe8-d27c8c2f1eca"></a>puredata &amp; modular synthesizer</h3>
+<div class="outline-text-3" id="text-orgheadline6">
+<p>
+<a href="https://www.google.co.uk/search?sourceid=chrome-psyapi2&amp;ion=1&amp;espv=2&amp;ie=UTF-8&amp;q=pure%20data%20modular%20synth&amp;oq=puredata%20mo&amp;aqs=chrome.2.69i57j0l5.10994j0j1">pure data modular synth - Google Search</a>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.pdpatchrepo.info/patches/patch/78">ARGOPd</a>, <a href="http://gerard.paresys.free.fr/ARGOPd/">ARGOPd Accueil Home</a></li>
+</ul>
+
+<p>
+<a href="http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/">Building a Simple Synthesizer</a>
+</p>
+
+<p>
+<a href="http://www.obiwannabe.co.uk/html/music/6SS/six-simple-synthesisers.html">Six simple synthesisers</a>
+</p>
+
+<p>
+<a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-i">Creating a simple synthesizer in Pure Data – Part I | Libre Music Production</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7"><a id="ID-2b943f69-3f4c-46f1-9170-6a13a55ba284"></a>Read</h2>
+<div class="outline-text-2" id="text-orgheadline7">
+<p>
+<span class="underline">Tabletops and reacTable</span>
+</p>
+
+<ul class="org-ul">
+<li><p>
+<a href="file:///home/berkan/Documents/Library/AudioVisualCreativePlatform/Bosi-Mathieu-Master-Thesis-2009 - Extending Physical Computing On The Reactable.pdf">file:///home/berkan/Documents/Library/AudioVisualCreativePlatform/Bosi-Mathieu-Master-Thesis-2009 - Extending Physical Computing On The Reactable.pdf</a>
+</p>
+<blockquote>
+<ul class="org-ul">
+<li>2.3 Position, Impact, and Pressure Sensing Technologies for Interactive Surfaces . . . . . . . . . . . 8
+<ul class="org-ul">
+<li>2.3.1 Acoustic sensing techniques . . . . . . . . . . . . . . . . . . . 8</li>
+<li>2.3.2 Computer Vision Techniques . . . . . . . . . . . . . . . . . . 11</li>
+<li>2.3.3 Approximate Pressure and Position Detection using Few Force Sensing Elements .. . . . . . . . 12</li>
+<li>2.3.4 Dense Surface Sensor Arrays . . . . . . . . . . . . . . . . . . 13</li>
+</ul></li>
+</ul>
+</blockquote></li>
+
+<li><a href="http://mtg.upf.edu/node/1725">Development strategies for tangible interaction on horizontal surfaces | Music Technology Group</a></li>
+
+<li><a href="file:///mnt/aux/Documents/Library/AudioVisualCreativePlatform/Patten et al 2006 - Interaction Techniques for Musical Performance with Tabletop Tangible Interfaces.pdf">Patten et al 2006 - Interaction Techniques for Musical Performance with Tabletop Tangible Interfaces.pdf</a></li>
+<li><a href="file:///mnt/aux/Documents/Library/AudioVisualCreativePlatform/Kaltenbrunner 2005 - TUIO: A Protocol for Table-Top Tangible User Interfaces.pdf">Kaltenbrunner 2005 - TUIO: A Protocol for Table-Top Tangible User Interfaces.pdf</a></li>
+
+<li><a href="file:///home/berkan/Documents/Library/AudioVisualCreativePlatform/Jorda et al 2007 - The reacTable: Exploring the Synergy between Live Music Performance and Tabletop Tangible Interfaces.pdf">Jorda et al 2007 - The reacTable: Exploring the Synergy between Live Music Performance and Tabletop Tangible Interfaces.pdf</a> (has a picture of the architecture)</li>
+
+<li><a href="http://fourms.wiki.ifi.uio.no/Reactable">Reactable - FourMs</a> (a reactable clone)</li>
+
+<li><a href="file:///home/berkan/Documents/Library/AudioVisualCreativePlatform/Tabletops---Horizontal-Interactive-Displays.pdf">Tabletops - Horizontal Interactive Displays.pdf</a></li>
+</ul>
+
+
+
+<p>
+<span class="underline">Sound Synthesis</span>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://web.archive.org/web/20120722014145/http:/adagio.calarts.edu/~eric/gs.html">Eric Kuehnls Writing Page: Granular Synthesis</a></li>
+<li><a href="http://www.sonicstate.com/articles/article.cfm?id=147">Feature: Introduction to Modular Synthesis @ SonicState.com</a></li>
+
+<li><a href="http://theproaudiofiles.com/sound-synthesis-basics/">Sound Synthesis – Understanding the Basics</a></li>
+</ul>
+
+
+<p>
+<span class="underline">Pure Data</span>
+</p>
+
+<ul class="org-ul">
+<li><a href="file:///mnt/aux/Documents/Library/Brinkmann - Making Musical Apps.pdf">Making Musical Apps.pdf</a></li>
+
+<li><a href="file:///home/berkan/Documents/Library/Programming%20Sound%20with%20Pure%20Data.pdf">Programming Sound with Pure Data.pdf</a></li>
+
+<li><a href="http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/">Pure Data - Building a Simple Synthesizer</a></li>
+
+<li><a href="http://muse.jhu.edu/login?auth=0&amp;type=summary&amp;url=/journals/computer_music_journal/v039/39.1.roberts.html">Project MUSE - Designing Musical Instruments for the Browser</a></li>
+</ul>
+
+
+<p>
+<span class="underline">GibberishJS</span>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.charlie-roberts.com/pubs.htm">Charlie Roberts</a> (of GibberishJS)</li>
+
+<li><a href="file:///home/berkan/Documents/Library/Roberts et al 2014 - Gibber: Abstractions for Creative Multimedia Programming.pdf">file:///home/berkan/Documents/Library/Roberts et al 2014 - Gibber: Abstractions for Creative Multimedia Programming.pdf</a></li>
+</ul>
+
+<p>
+<span class="underline">MISC</span>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

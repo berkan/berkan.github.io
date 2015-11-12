@@ -1,0 +1,178 @@
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil
+#+OPTIONS: html-preamble:nil html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t toc:nil
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME: index.html
+#+HTML_LINK_UP: index.html
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/normalize.css"/><link rel="stylesheet" type="text/css" href="css/org.css"/><link rel="stylesheet" type="text/css" href="css/toc.css"/>
+#+HTML_HEAD_EXTRA:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+
+
+* Designs for a Low-cost, Portable Tangible Tabletop Interface
+:PROPERTIES:
+:ID:       1f68bf95-9555-43b4-ab1e-54c4aa0ba021
+:END:
+
+#+BEGIN_SUMMARY
+research
+#+END_SUMMARY
+
+#+BEGIN_DESCRIPTION
+
+
+*Tangible User Interfaces* (TUIs) are bridges between the digital and physical worlds that we inhabit, making the former accessible and manipulable, by using the real world as a display and as medium for manipulation. 
+
+One such instance is the *Tabletop tangible interface*, or Interactive surface, so called because a horizontal surface is used by one or more people to interact with a digital model. 
+
+This is a systematic exploration of possible designs for a *low-cost* and *portable* Tabletop tangible interface.
+
+#+END_DESCRIPTION
+
+* Resources
+:PROPERTIES:
+:ID:       49ddc333-dfad-487c-bd3b-dac7e41a05c6
+:END:
+
+- [[http://mkonrad.net/projects/ipad2tui.html][mkonrad.net: ~/ipad2tui - Building a Portable Low Cost Tangible User Interface Based on a Tablet Computer]]
+
+- [[http://spyractable.blogspot.gr/][Spyractable: A "reactable-like" project for DIY tangible interface synthesizer]]
+  - [[http://link.springer.com/chapter/10.1007/978-3-319-07230-2_57][Spyractable: A Tangible User Interface Modular Synthesizer - Springer]]
+  - [[https://books.google.co.uk/books?id=3EG5BQAAQBAJ&pg=PA600&lpg=PA600&dq=Spyractable&source=bl&ots=K15YWUGKg5&sig=SoMyDJJa-HbRV9e5OtV0sP749dc&hl=en&sa=X&ved=0CC0Q6AEwAmoVChMIu_C1gpT8yAIVi3IUCh2qmAw2#v=onepage&q=Spyractable&f=false][Human-Computer Interaction Advanced Interaction, Modalities, and Techniques ... - Google Books]]
+
+
+* Tasks
+:PROPERTIES:
+:ID:       9a412929-2938-4f16-8232-a847bb92b4a7
+:END:
+
+- Read about Modular Synthesizers and their modules and techniques
+  - Spyractable has a good list of modules
+    [[http://spyractable.blogspot.co.uk/2013/04/what-there-is-so-far.html][Spyractable: A "reactable-like" project for DIY tangible interface synthesizer: What there is so far...]]
+      #+BEGIN_QUOTE
+
+    Right now there have been created 12 patches (tangible objects) that implement these modular synthesizer modules:
+    - Amplifier with lfo input
+    - A multi-effect with chorus, phaser and mixed   function.
+    - A multi-filter with low-pass, high-pass and band-pass function, plus a cut-off frequency generated envelope (GE) with lfo input and a "midi keyboard plug-in that sets the cut-off frequency equal the midi-pitch and a volume GE. This way it could function like a silly Subtractive-synthesizer if you connect it with noisy input..
+    - Delay effect
+    - Sample player with 8 samples
+    - A sine-wave oscillator that also functions as carrier by connection to it a frequency modulator, and also volume sliders for the sine harmonics of the frequency and a GE working when midi keyboard is on.
+    - Noise oscillator
+    - Microphone input with a midi-keyboard vocoder plug in (fixed chords).
+    - A multi-oscillator with sine, saw, square and triangle oscillators, plus midi-keyboard in.
+    - lfo (sine, saw, square and triangle oscillators).
+    - modulator that takes sine-oscillator patch's frequency and user sets the modulation index and the frequency ratio.
+    - Master volume controller.
+      #+END_QUOTE 
+  - reacTable mentions that they have abstractions (instruments) built on the simpler puredata objects
+  - [[http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/][Pure Data - Building a Simple Synthesizer]]
+      #+BEGIN_QUOTE 
+    "In analog electronic music, a synthesizer is built from several modules, or parts:
+
+     - The Oscillators, which generate the tones.
+     - The LFO (Low Frequency Oscillator), which usually modulates either the frequency or gain of the Oscillator(s), or the frequency of the Filter. 
+     - The Filter, which emphasizes and/or removes certain frequencies. 
+     - The Envelope Generator, which controls changes in frequency or gain over the duration of the note. 
+     - The Amplifier, which controls the gain of the synthesizer.
+      #+END_QUOTE
+
+
+
+
+
+* Research / Questions
+:PROPERTIES:
+:ID:       6b72c6fa-f953-4408-9812-539dbe78afb3
+:END:
+
+** puredata & dynamic patching / libpd vs dynamic patching
+:PROPERTIES:
+:ID:       de6f0f41-cb29-4d5c-92ad-ede7ed78cdb3
+:END:
+
+[The trouble is, Pure Data community is using "Dynamic Patching" to mean dynamically creating new objects; whereas I mean it in the reacTable sense -- dynamically connecting objects based on their proximity]
+
+
+[[https://twitter.com/jonbro/status/325900235459141633][Jonathan Brodsky on Twitter: "@paniq we use libpd, not zengarden..."]] "A .pd file is a list of internal Pd messages. You can send the same messages with libpd, so dynamic patching is possible."
+
+[[https://github.com/mhroth/ZenGarden][mhroth/ZenGarden]] - ZenGarden (ZG) is a runtime for the Pure Data (Pd) audio programming language. It is implemented as an extensible audio library allowing full control over signal processing, message passing, and graph manipulation. 
+
+[[https://www.mail-archive.com/pd-list@iem.at/msg43036.html][{PD} Dynamic patching with audio - review]]
+
+** puredata & modular synthesizer
+:PROPERTIES:
+:ID:       0843c65a-eda2-4304-abe8-d27c8c2f1eca
+:END:
+
+[[https://www.google.co.uk/search?sourceid=chrome-psyapi2&ion=1&espv=2&ie=UTF-8&q=pure%2520data%2520modular%2520synth&oq=puredata%2520mo&aqs=chrome.2.69i57j0l5.10994j0j1][pure data modular synth - Google Search]]
+
+- [[http://www.pdpatchrepo.info/patches/patch/78][ARGOPd]], [[http://gerard.paresys.free.fr/ARGOPd/][ARGOPd Accueil Home]]
+
+[[http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/][Building a Simple Synthesizer]]
+
+[[http://www.obiwannabe.co.uk/html/music/6SS/six-simple-synthesisers.html][Six simple synthesisers]]
+
+[[http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%25E2%2580%2593-part-i][Creating a simple synthesizer in Pure Data – Part I | Libre Music Production]]
+
+* Read
+:PROPERTIES:
+:ID:       2b943f69-3f4c-46f1-9170-6a13a55ba284
+:END:
+
+_Tabletops and reacTable_
+
+- [[~/Documents/Library/AudioVisualCreativePlatform/Bosi-Mathieu-Master-Thesis-2009 - Extending Physical Computing On The Reactable.pdf]]
+   #+BEGIN_QUOTE
+  - 2.3 Position, Impact, and Pressure Sensing Technologies for Interactive Surfaces . . . . . . . . . . . 8
+    - 2.3.1 Acoustic sensing techniques . . . . . . . . . . . . . . . . . . . 8
+    - 2.3.2 Computer Vision Techniques . . . . . . . . . . . . . . . . . . 11
+    - 2.3.3 Approximate Pressure and Position Detection using Few Force Sensing Elements .. . . . . . . . 12
+    - 2.3.4 Dense Surface Sensor Arrays . . . . . . . . . . . . . . . . . . 13
+   #+END_QUOTE
+
+- [[http://mtg.upf.edu/node/1725][Development strategies for tangible interaction on horizontal surfaces | Music Technology Group]]
+ 
+- [[/mnt/aux/Documents/Library/AudioVisualCreativePlatform/Patten et al 2006 - Interaction Techniques for Musical Performance with Tabletop Tangible Interfaces.pdf][Patten et al 2006 - Interaction Techniques for Musical Performance with Tabletop Tangible Interfaces.pdf]]
+- [[/mnt/aux/Documents/Library/AudioVisualCreativePlatform/Kaltenbrunner 2005 - TUIO: A Protocol for Table-Top Tangible User Interfaces.pdf][Kaltenbrunner 2005 - TUIO: A Protocol for Table-Top Tangible User Interfaces.pdf]]
+
+- [[~/Documents/Library/AudioVisualCreativePlatform/Jorda et al 2007 - The reacTable: Exploring the Synergy between Live Music Performance and Tabletop Tangible Interfaces.pdf][Jorda et al 2007 - The reacTable: Exploring the Synergy between Live Music Performance and Tabletop Tangible Interfaces.pdf]] (has a picture of the architecture)
+
+- [[http://fourms.wiki.ifi.uio.no/Reactable][Reactable - FourMs]] (a reactable clone)
+
+- [[~/Documents/Library/AudioVisualCreativePlatform/Tabletops---Horizontal-Interactive-Displays.pdf][Tabletops - Horizontal Interactive Displays.pdf]]
+
+
+
+_Sound Synthesis_
+
+- [[http://web.archive.org/web/20120722014145/http:/adagio.calarts.edu/~eric/gs.html][Eric Kuehnls Writing Page: Granular Synthesis]]
+- [[http://www.sonicstate.com/articles/article.cfm?id=147][Feature: Introduction to Modular Synthesis @ SonicState.com]]
+
+- [[http://theproaudiofiles.com/sound-synthesis-basics/][Sound Synthesis – Understanding the Basics]]
+
+
+_Pure Data_
+
+- [[/mnt/aux/Documents/Library/Brinkmann - Making Musical Apps.pdf][Making Musical Apps.pdf]]
+
+- [[~/Documents/Library/Programming%20Sound%20with%20Pure%20Data.pdf][Programming Sound with Pure Data.pdf]]
+
+- [[http://en.flossmanuals.net/pure-data/audio-tutorials/simple-synth/][Pure Data - Building a Simple Synthesizer]]
+
+- [[http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/computer_music_journal/v039/39.1.roberts.html][Project MUSE - Designing Musical Instruments for the Browser]]
+
+
+_GibberishJS_
+
+- [[http://www.charlie-roberts.com/pubs.htm][Charlie Roberts]] (of GibberishJS)
+
+- [[~/Documents/Library/Roberts et al 2014 - Gibber: Abstractions for Creative Multimedia Programming.pdf]]
+
+_MISC_
+
