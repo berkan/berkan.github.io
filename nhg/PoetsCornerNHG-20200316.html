@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-16 Mon 17:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meeting on March 16, 2020 Monday</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="berkan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Meeting on March 16, 2020 Monday</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org782160c">1. Possible Topics</a>
+<ul>
+<li><a href="#orgc1e8119">1.1. Goal(s)</a></li>
+<li><a href="#org53697a1">1.2. Discussion: what happens if/when local services have interruptions?</a></li>
+</ul>
+</li>
+<li><a href="#org6d02e88">2. Public Information Posters</a></li>
+<li><a href="#orgf511583">3. Resources to stay up-to-date</a>
+<ul>
+<li><a href="#orgee423de">3.1. To read</a></li>
+<li><a href="#org920f191">3.2. General Information</a></li>
+<li><a href="#org9e5fd1c">3.3. Household and Community Preparedness</a></li>
+<li><a href="#orgf45d197">3.4. External links</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org782160c" class="outline-2">
+<h2 id="org782160c"><span class="section-number-2">1</span> Possible Topics</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc1e8119" class="outline-3">
+<h3 id="orgc1e8119"><span class="section-number-3">1.1</span> Goal(s)</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b>Increasing the overall resilience of the neighbourhood</b> by:<br />
+</p>
+
+<ul class="org-ul">
+<li>Identifying the high-risk (elderly and vulnerable) neighbours<br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Identifying vulnerable households and individuals<br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Distributing information and preparedness materials to households<br />
+<ul class="org-ul">
+<li>How the virus transmits, how to protect yourself &amp; others, key symptoms &#x2013; see information posters below<br /></li>
+<li>Self-isolation preparedness checklist &amp; form, compiled from:<br />
+<ul class="org-ul">
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/community-mitigation-strategy.pdf">Community Mitigation Strategy - CDC US (pdf)</a><br /></li>
+<li><a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance/stay-at-home-guidance-for-people-with-confirmed-or-possible-coronavirus-covid-19-infection">Stay at home: guidance for people with confirmed or possible coronavirus (COVID-19) infection - GOV.UK</a><br /></li>
+</ul></li>
+<li>Contacts in the neighbourhood<br /></li>
+<li>Maybe: "<i>contact us if you have difficulty preparing</i>"<br /></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Establishing a neighbourhood communication network, by one or more ways:<br />
+<ul class="org-ul">
+<li>a buddy system (as in <a href="https://www.ourwatch.org.uk/news/protect-isolated-and-vulnerable-during-covid-19-outbreak">Protect the isolated and vulnerable during the COVID-19 outbreak - Neighbourhood Watch Network</a>)<br /></li>
+<li>a telephone tree (as in <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/552872/community_emergency_plan_template.pdf">Community Emergency Plan Template (pdf)</a>, and <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/552869/community_emergency_plan_toolkit.pdf">Community Emergency Plan Toolkit (pdf) - GOV.UK</a>)<br /></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Creating a database of contact numbers and emails, number and ages of children[?], pet information[?], and equipment and skills that might be useful in an emergency, such as medical training (as in <a href="http://burlingamenetwork.org/connect-your-block/">Connect Your Block - Burlingame Neighborhood Network</a>)<br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Establishing a rota for checking-up and supporting high-risk and vulnerable neighbours<br />
+<ul class="org-ul">
+<li>Maybe: "2 households supporting one household" (as in <a href="https://www.facebook.com/groups/epcnetwork/permalink/1764334273708464/">https://www.facebook.com/groups/epcnetwork/permalink/1764334273708464/</a>)<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org53697a1" class="outline-3">
+<h3 id="org53697a1"><span class="section-number-3">1.2</span> Discussion: what happens if/when local services have interruptions?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<b>Especially</b><br />
+</p>
+<ul class="org-ul">
+<li>Less frequent rubbish collection<br /></li>
+<li>Supermarket closures due to staff shortages<br /></li>
+</ul>
+
+<p>
+<b>Less likely but possible and can be more severe:</b><br />
+</p>
+<ul class="org-ul">
+<li>water<br /></li>
+<li>electricity cuts<br /></li>
+</ul>
+
+<p>
+Less severe:<br />
+</p>
+<ul class="org-ul">
+<li>recycling collection<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org6d02e88" class="outline-2">
+<h2 id="org6d02e88"><span class="section-number-2">2</span> Public Information Posters</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://new.brighton-hove.gov.uk/coronavirus-public-information-posters">Coronavirus public information posters - Brighton &amp; Hove Council</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.bbc.co.uk/news/health-51048366?fbclid=IwAR24HrcDooUvIsHeUQT_bM-Y7DSfKFDomMh-dodv6yyGPPPefOZ6-338rFU">Coronavirus symptoms: What are they and how do I protect myself? - BBC News</a> 6 posters, including:<br />
+<ul class="org-ul">
+<li>How do I protect myself?<br /></li>
+<li>What should I do to prevent catching and spreading the virus?<br /></li>
+<li>Coronavirus: Key symptoms<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf511583" class="outline-2">
+<h2 id="orgf511583"><span class="section-number-2">3</span> Resources to stay up-to-date</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+
+
+<div id="outline-container-orgee423de" class="outline-3">
+<h3 id="orgee423de"><span class="section-number-3">3.1</span> To read</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+<a href="https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/in_it_together_neighbourhood_preparedness_guide_web_final_2015.pdf">https://www2.gov.bc.ca/assets/gov/public-safety-and-emergency-services/emergency-preparedness-response-recovery/embc/preparedbc/in_it_together_neighbourhood_preparedness_guide_web_final_2015.pdf</a><br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org920f191" class="outline-3">
+<h3 id="org920f191"><span class="section-number-3">3.2</span> General Information</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Coronavirus disease (COVID-19) advice for the public - WHO</a><br /></li>
+<li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Coronavirus disease 2019 - WHO</a> (main page)<br /></li>
+<li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Coronavirus (COVID-19) - NHS</a><br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9e5fd1c" class="outline-3">
+<h3 id="org9e5fd1c"><span class="section-number-3">3.3</span> Household and Community Preparedness</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li><a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance/stay-at-home-guidance-for-people-with-confirmed-or-possible-coronavirus-covid-19-infection">Stay at home: guidance for people with confirmed or possible coronavirus (COVID-19) infection - GOV.UK</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.ourwatch.org.uk/news/protect-isolated-and-vulnerable-during-covid-19-outbreak">Protect the isolated and vulnerable during the COVID-19 outbreak - Neighbourhood Watch Network</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/community-mitigation-strategy.pdf">Community Mitigation Strategy - CDC US (pdf)</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.ourwatch.org.uk/news/community-action-response-launched">Community Action Response launched | Neighbourhood Watch Network</a><br />
+<ul class="org-ul">
+<li><a href="https://www.edenprojectcommunities.com/community-action-response">Community Action Response | Eden Project Communities</a><br /></li>
+<li><a href="https://www.facebook.com/groups/epcnetwork/?source_id=108882962474145">(Facebook) Eden Project Communities Network</a> (parent of Community Action Response)<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf45d197" class="outline-3">
+<h3 id="orgf45d197"><span class="section-number-3">3.4</span> External links</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li><a href="https://new.brighton-hove.gov.uk/coronavirus-covid-19">Coronavirus (Covid-19) - Brighton &amp; Hove Council</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.gov.uk/government/publications/coronavirus-action-plan">Coronavirus (COVID-19) action plan - GOV.UK</a><br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+<a href="https://www.gov.uk/government/publications/coronavirus-action-plan/coronavirus-action-plan-a-guide-to-what-you-can-expect-across-the-uk">Coronavirus action plan: a guide to what you can expect across the UK - GOV.UK</a><br />
+</p>
+<blockquote>
+<p>
+In England and Wales, local organisations (working jointly through the Local Resilience Forums and Local Health Resilience Partnerships in England, and NHS emergency planning structures in Wales) have the primary responsibility for planning for and responding to any major emergency, including a pandemic.<br />
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li><p>
+<a href="https://www.gov.uk/guidance/local-resilience-forums-contact-details#england">Local resilience forums: contact details - GOV.UK</a><br />
+</p>
+<blockquote>
+<p>
+Sussex LRF Secretariat, Sussex Police Headquarters, Church Lane, Malling, Lewes, BN7 2DZ. Contact: <a href="mailto:sussexresilienceforum@sussex.pnn.police.uk">mailto:sussexresilienceforum@sussex.pnn.police.uk</a> Tel: 01273 404 385<br />
+</p>
+</blockquote>
+<ul class="org-ul">
+<li><a href="https://www.sussex.police.uk/police-forces/sussex-police/areas/au/about-us/preparing-for-an-emergency---sussex-resilience-forum/">Preparing for an emergency - Sussex Resilience Forum | Sussex Police</a><br /></li>
+<li><a href="https://www.sussex.police.uk/SysSiteAssets/media/downloads/sussex/about-us/sussex-resilience-forum/srf-community-information-on-risks-in-sussex.pdf">Information On Risks In Sussex - Sussex Resilience Forum | Sussex Police (pdf)</a> (pages 10-11 are about Pandemic Flu)<br /></li>
+
+<li><a href="https://www.gov.uk/government/publications/community-resilience-resources-and-tools">Community resilience: resources and tools - GOV.UK</a><br /></li>
+<li><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/552869/community_emergency_plan_toolkit.pdf">Community Emergency Plan Toolkit (pdf) - GOV.UK</a><br /></li>
+
+<li><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/552872/community_emergency_plan_template.pdf">Community Emergency Plan Template (pdf)</a><br /></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: berkan</p>
+<p class="date">Created: 2020-03-16 Mon 17:33</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
